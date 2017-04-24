@@ -62,7 +62,11 @@
 
     function checkSlides(e) {
       // console.count(e);
-      console.log(e);
+      // console.log(window.scrollY);
+      sliderImages.forEach(sliderImage => {
+        // half way through the image
+        const slideInAt = (window.scrollY + window.innerHeight) - (sliderImage / 2);
+      });
     }
 
     window.addEventListener('scroll', debounce(checkSlides));
