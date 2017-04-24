@@ -65,7 +65,7 @@
       console.log(e);
     }
 
-    window.addEventListener('scroll', checkSlides);
+    window.addEventListener('scroll', debounce(checkSlides));
 
   </script>
 
